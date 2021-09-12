@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Gift Search</title>
+    </head>
+    <style>
+        .content {
+            text-align: center;
+        }
+        h1 { text-align: center;
+        }
+        .card { text-align: center;
+        }
+        .card-body {
+            border-radius: 10%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+        }
+        section {
+            float: left; width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 5em;
+            padding-right: 2em;
+        }
+        .container {
+            height: 300px;
+            width: 70%;
+            background: #EEE;
+            margin: 10px auto;
+            position: relative;
+        }
+        .rounded {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <body class="content">
+        <header>
+            <h1>My Gift Search</h1>
+        </header>
+        <nav>
+            <a href="home.com">Home</a>
+            <a href="lastestpick.com">Lastest Pick</a>
+            <a href="giftsbyoccasion.com">Gifts By Occasion</a>
+            <a href="typesofgifts.com">Types of Gifts</a>
+            <a href="blog.com">Blog</a>
+            <a href="contactus.com">Contact Us</a>
+        </nav><br><br>
+        <div class="card">
+            <div class="card-header">
+                <h3>WHO DO YOU WANT TO MAKE HAPPY?</h3>
+            </div>
+            <div class="card-body">
+                <label for="sex">I want to get a gift for</label>
+                <select name="sex" id="sex">
+                    <option value="A MALE">A MALE</option>
+                    <option value="A FEMALE">A FEMALE</option>
+                    <option value="DOESNT MATTER">DOESNT MATTER</option>
+                </select><br>
+                <label for="whom">who is my </label>
+                <select name="whom" id="whom">
+                    <option value="PARTNER">PARTNER</option>
+                    <option value="FAMILY MEMBER">FAMILY MEMBER</option>
+                    <option value="FRIEND">FRIEND</option>
+                    <option value="CO-WORKER">CO-WORKER</option>
+                    <option value="ACQUAINTANCE">ACQUAINTANCE</option>
+                </select><br>
+                <label for="age">They are </label>
+                <select name="age" id="age">
+                    <option value="A CHILD">A CHILD</option>
+                    <option value="A TENNAGER">A TENNAGER</option>
+                    <option value="AN ADULT">AN ADULT</option>
+                </select><br>
+                <label for="money">and my budget is</label>
+                <select name="money" id="money">
+                    <option value="UNDER $20">UNDER $20</option>
+                    <option value="UNDER $50">UNDER $50</option>
+                    <option value="UNDER $100">UNDER $100</option>
+                    <option value="INFINITE">INFINITE</option>
+                </select><br><br>
+                <button type="button" class="btn">WHAT TO GET?</button>
+                
+            </div>
+        </div>
+        <h2>
+            LASTEST PICKS
+        </h2>
+        <span class="container">
+            <section>
+                <img src="SHIRTS.jpeg" class="rounded", alt="shirts">
+                <p>Sloth Loves Cat T-Shirt</p><br>
+                <p>Of course two of the cutest animals on the planet must like each other and you can show their love with this adorable T-shirt! Read more</p>
+            </section>
+            <section>
+                <img src="TRAVEL PACK.jpeg" class="rounded", alt="TRAVEL PACK">
+                <p>Men's Traveler Dopp Kit</p><br>
+                <p>A compact high quality toiletry bag with handles and pockets, ready to be packed and thrown in the bag as you prepare to go on an adventure. Read more »</p>
+            </section>
+            <section>
+                <img src="FOOT WARMER.jpeg" class="rounded", alt="FOOT WARMER">
+                <p>Narwhal USB Foot Warmers</p><br>
+                <p>The unicorn of the sea, the narwhal probably can't keep a human away from hypothermia, but these narwhal slippers *will* keep your feet warm and toasty. Read more »</p>
+            </section>
+        </span>
+    </body>
+</html>
