@@ -1,47 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <title>My Gift Search</title>
     </head>
     <style>
-        .content {text-align: center;
-        }
-        h1 { text-align: center;
-        }
-        section {
-            float: left; width: 25%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 5em;
-            padding-right: 2em;
-        }
-        .container {
-            text-align: center;
-            max-width: 100%;
-            box-shadow: 0 4px 8px 0 #00000033;
-
-        }
-        .rounded {
-            width: 100%;
-            height: auto;
+        h1,h3 { text-align: center;
         }
     </style>
-    <body class="content">
+    <body>
         <header>
             <h1>My Gift Search</h1>
         </header>
-        <nav>
-            <span class="navbar">
-                <a href="home.com">Home</a>
-                <a href="lastestpick.com">Lastest Pick</a>
-                <a href="giftsbyoccasion.com">Gifts By Occasion</a>
-                <a href="typesofgifts.com">Types of Gifts</a>
-                <a href="blog.com">Blog</a>
-                <a href="contactus.com">Contact Us</a>
-            </span>
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.com">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lastestpick.com">Lastest Pick</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="giftsbyoccasion.com">Gifts By Occasion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="typesofgifts.com">Types of Gifts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.com">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.com">Contact Us</a>
+                </li>
+            </ul>
         </nav><br><br>
-        <div class="container">
+        <div class="container p-3 my-3 bg-primary text-white" style="text-align: center;">
             <h3>WHO DO YOU WANT TO MAKE HAPPY?</h3>
             <label for="sex">I want to get a gift for</label>
             <select name="sex" id="sex">
@@ -70,27 +68,33 @@
                 <option value="UNDER $100">UNDER $100</option>
                 <option value="INFINITE">INFINITE</option>
             </select><br><br>
-            <button type="button" class="btn">WHAT TO GET?</button>
-        </div>
-        <h2>
+            <button type="button" class="btn btn-outline-dark">WHAT TO GET?</button>
+        </div><br>
+        <h3>
             LASTEST PICKS
-        </h2>
-        <span>
-            <section>
-                <img src="SHIRTS.jpeg" class="rounded", alt="shirts">
-                <p>Sloth Loves Cat T-Shirt</p><br>
+        </h3>
+        <div class="card-deck">
+            <div class="card bg-primary">
+              <div class="card-body text-center">
+                <img class="img-fluid" src="SHIRTS.jpeg" alt="shirts">
+                <p class="card-text">Sloth Loves Cat T-Shirt</p>
                 <p>Of course two of the cutest animals on the planet must like each other and you can show their love with this adorable T-shirt! Read more</p>
-            </section>
-            <section>
-                <img src="TRAVEL PACK.jpeg" class="rounded", alt="TRAVEL PACK">
-                <p>Men's Traveler Dopp Kit</p><br>
+              </div>
+            </div>
+            <div class="card bg-warning">
+              <div class="card-body text-center">
+                <img class="img-fluid" src="TRAVEL PACK.jpeg" alt="TRAVEL PACK">
+                <p class="card-text">Men's Traveler Dopp Kit</p>
                 <p>A compact high quality toiletry bag with handles and pockets, ready to be packed and thrown in the bag as you prepare to go on an adventure. Read more »</p>
-            </section>
-            <section>
-                <img src="FOOT WARMER.jpeg" class="rounded", alt="FOOT WARMER">
-                <p>Narwhal USB Foot Warmers</p><br>
+              </div>
+            </div>
+            <div class="card bg-success">
+              <div class="card-body text-center">
+                <img class="img-fluid" src="FOOT WARMER.jpeg" alt="FOOT WARMER">
+                <p class="card-text">Narwhal USB Foot Warmers</p>
                 <p>The unicorn of the sea, the narwhal probably can't keep a human away from hypothermia, but these narwhal slippers *will* keep your feet warm and toasty. Read more »</p>
-            </section>
-        </span>
+              </div>
+            </div>
+        </div>
     </body>
 </html>
